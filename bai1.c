@@ -14,16 +14,16 @@ int main () {
     int n=0;
     printf ("Mời nhập số phần tử: ");
     scanf ("%d",&n);
-    int SoThuc [n], i;
+    int Arr [n], i;
     for ( i = 0; i < n; i++) {
     printf ("Nhập số ô thứ %d: ",i);
-    scanf ("%d",&SoThuc[i]);
+    scanf ("%d",&Arr[i]);
     }
     float tong=0, TrungBinh=0;
     int count=0;
     for (i = 0; i< n; i++) {
-        if (SoThuc[i]%3==0) {
-            tong += SoThuc[i];
+        if (Arr[i]%3==0) {
+            tong += Arr[i];
             count++;
         }
     }
