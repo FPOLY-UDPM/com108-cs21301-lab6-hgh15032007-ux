@@ -9,5 +9,30 @@
 //  Output: Xuất ra màn hình kết quả của trung bình tổng các số chia hết cho 3 trong mảng 
 
 
-// VIẾT CODE Ở ĐÂY
+#include <stdio.h>
+int main () {
+    int n=0;
+    printf ("Mời nhập số phần tử: %d",n);
+    scanf ("%d",&n);
+    int SoThuc [n], i;
+    for ( i = 0; i < n; i++) {
+    printf ("Nhập số ô thứ %d: ",i);
+    scanf ("%d",&SoThuc[i]);
+    }
+    float tong=0, TrungBinh=0;
+    int count=0;
+    for (i = 0; i< n; i++) {
+        if (SoThuc[i]%3==0) {
+            tong += SoThuc[i];
+            count++;
+        }
+    }
+    if (count > 0) {
+        TrungBinh = tong / count;
+        printf("Trung bình các số chia hết cho 3: %.2f\n", TrungBinh);
+    } else {
+        printf("Không có số nào trong mảng chia hết cho 3.\n");
+    }
+    return 0;
+}   
 
