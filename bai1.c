@@ -12,7 +12,7 @@
 #include <stdio.h>
 int main () {
     int n=0;
-    printf ("Mời nhập số phần tử: %d",n);
+    printf ("Mời nhập số phần tử: ");
     scanf ("%d",&n);
     int SoThuc [n], i;
     for ( i = 0; i < n; i++) {
