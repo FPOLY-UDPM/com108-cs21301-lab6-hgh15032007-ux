@@ -10,3 +10,27 @@
 
 // VIẾT CODE Ở ĐÂY
 
+#include <stdio.h>
+int main() {
+    int n, i;
+    printf("Nhập số phần tử: ");
+    scanf("%d", &n);
+    int mang[n];
+    for(i = 0; i < n; i++) {
+        printf("Nhập mảng [%d]: ", i);
+        scanf("%d", &mang[i]);
+    }
+    int max = mang[0];
+    int min = mang[0];
+    for(i = 1; i < n; i++) {
+        if(mang[i] > max) {
+            max = mang[i];
+        }
+        if(mang[i] < min) {
+            min = mang[i]; 
+        }
+    }
+    printf("\nGiá trị lớn nhất (Max) là: %d", max);
+    printf("\nGiá trị nhỏ nhất (Min) là: %d", min);
+    return 0;
+}
